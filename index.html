@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="mockData.js"></script>
+    <script>
+      window.onload = function () {
+        toggleView();
+      };
+    </script>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container body-content">
+      <h2 class="col-xs-12 text-center">Tableau des propositions</h2>
+      <div class="App">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="panel panel-primary panel-proposition">
+              <div class="panel-heading">
+                <h2>Votre proposition en tant que Consommateur</h2>
+              </div>
+              <div class="panel-body">
+                <div class="row proposition">
+                  <div class="col-xs-12 proposition-block">
+                    <ul>
+                      <li>
+                        <i class="fa fa-clock-o fa-2x"></i>
+                        <span class="info-title">Date&nbsp;:</span>
+                        <span class="info-content">2019-02-05 14:13</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-exchange fa-2x"></i>
+                        <span class="info-title">Statut&nbsp;:</span>
+                        <span class="info-content"
+                          >En attente de réponse de PARLe - Médiation.</span
+                        >
+                      </li>
+                      <li>
+                        <i class="fa fa-comment-o fa-2x"></i>
+                        <span class="info-title">Motif&nbsp;:</span>
+                        <div class="text-div-breaker">
+                          <span class="info-content">ghmgm</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="panel panel-primary panel-proposition">
+              <div class="panel-heading">
+                <h2>PROPOSITION DE : PARLE - MÉDIATION (COMMERÇANT)</h2>
+              </div>
+              <div class="panel-body">
+                <div class="row proposition">
+                  <div class="col-xs-12 proposition-block">
+                    <ul>
+                      <li>
+                        <i class="fa fa-clock-o fa-2x"></i>
+                        <span class="info-title">Date&nbsp;:</span>
+                        <span class="info-content">2019-02-05 14:13</span>
+                      </li>
+                      <li>
+                        <i class="fa fa-exchange fa-2x"></i>
+                        <span class="info-title">Statut&nbsp;:</span>
+                        <span class="info-content"
+                          >En attente de réponse de PARLe - Médiation.</span
+                        >
+                      </li>
+                      <li>
+                        <i class="fa fa-comment-o fa-2x"></i>
+                        <span class="info-title">Motif&nbsp;:</span>
+                        <div class="text-div-breaker">
+                          <span class="info-content">ghmgm</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <table class="table-spacing">
+          <thead>
+            <tr class="bg-primary">
+              <th id="P1" scope="col" class="panel-heading col-md-6">
+                <h2>VOTRE PROPOSITION EN TANT QUE CONSOMMATEUR</h2>
+              </th>
+              <th id="P2" scope="col" class="panel-heading col-md-6">
+                <h2>PROPOSITION DE : PARLE - MÉDIATION (COMMERÇANT)</h2>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers="date P1"><strong>Date: </strong>Wed May 19 2021</td>
+              <td headers="date P2"><strong>Date: </strong>Wed May 19 2021</td>
+            </tr>
+            <tr>
+              <td headers="state P1"><strong>Statut: </strong>waiting</td>
+              <td headers="state P2"><strong>Statut: </strong>waiting</td>
+            </tr>
+            <tr>
+              <td headers="why P1"><strong>Motif: </strong>raisons</td>
+              <td headers="why P2"><strong>Motif: </strong>raisons</td>
+            </tr>
+          </tbody>
+        </table> -->
+        <div class="row proposition">
+          <div class="col-md-6">
+            <h2 class="proposition-details">Détails</h2>
+            <div class="pull-right" style="margin-bottom: 5px">
+              <span>Comparer&nbsp;</span>
+              <div
+                class="
+                  bootstrap-switch
+                  bootstrap-switch-wrapper
+                  bootstrap-switch-mini
+                  bootstrap-switch-animate
+                  bootstrap-switch-off
+                "
+                style="width: 42px"
+              >
+                <div
+                  class="bootstrap-switch-container"
+                  style="width: 60px; margin-left: -20px"
+                >
+                  <span
+                    class="bootstrap-switch-handle-on bootstrap-switch-primary"
+                    style="width: 20px"
+                  >
+                    <i class="fa fa-circle-o"></i>
+                  </span>
+                  <span class="bootstrap-switch-label" style="width: 20px">
+                    &nbsp;
+                  </span>
+                  <span
+                    class="bootstrap-switch-handle-off bootstrap-switch-default"
+                    style="width: 20px"
+                  >
+                    <i class="fa fa-minus fa-rotate-90"></i>
+                  </span>
+                  <input
+                    type="checkbox"
+                    name="activateComparisonDesktop"
+                    data-size="mini"
+                    data-on-text="<i class='fa fa-circle-o'></i>"
+                    data-off-text="<i class='fa fa-minus fa-rotate-90'></i>"
+                    onClick="toggleView()"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="proposition-details">Détails</h2>
+          </div>
+        </div>
+        <table class="table">
+          <tbody id="target_body"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <tr>
+    <th headers="proposition" class="bg-info" id="detail">
+      Details de l'offre
+    </th>
+    <td headers="detail P1">
+      <ul>
+        <li>
+          <i className="fa fa-check fa-2x text-success"></i>
+          <span className="sr-only">✓</span>
+          <span className="option-description">
+            Option sans complement
+          </span>
+        </li>
+        <li>
+          <i className="fa fa-check fa-2x text-success"></i>
+          <span className="sr-only">✓ </span>
+          <span className="option-description"> Date Limite </span>
+          <br />
+          <span className="option-complement-caption"> date </span>
+          <span className="option-complement-description">
+            Thu Apr 22 2021
+          </span>
+        </li>
+        <li>
+          <i className="fa fa-check fa-2x text-success"></i>
+          <span className="sr-only">✓ </span>
+          <span className="option-description"> Remboursement </span>
+          <br />
+          <span className="option-complement-caption"> Montant </span>
+          <span className="option-complement-description"> 35 $ </span>
+        </li>
+      </ul>
+    </td>
+    <td headers="detail P1">
+      <ul>
+        <li>
+          <i className="fa fa-check fa-2x text-success"></i>
+          <span className="sr-only">✓ </span>
+          <span className="option-description"> Remboursement </span>
+          <br />
+          <span className="option-complement-caption"> Montant </span>
+          <span className="option-complement-description"> 20 $ </span>
+        </li>
+      </ul>
+    </td>
+  </tr> -->
